@@ -89,6 +89,9 @@ class GR00T_N1_5(PreTrainedModel):
     def validate_inputs(self, inputs):
         # NOTE -- this should be handled internally by the model
         # however, doing that will likely be breaking changes -- so we'll need to do it after the deadline
+        
+        # print(f"action_horizon: {self.action_horizon}")
+        # print(f"action_dim: {self.action_dim}")
 
         detected_error = False
         error_msg = ERROR_MSG
