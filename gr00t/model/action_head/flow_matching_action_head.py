@@ -102,6 +102,7 @@ class MultiEmbodimentActionEncoder(nn.Module):
         x = self.W3(x, cat_ids)
         return x
 
+# TODO: add a new action head for libero_arm
 
 @dataclass
 class FlowmatchingActionHeadConfig(PretrainedConfig):
